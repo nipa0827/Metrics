@@ -35,11 +35,9 @@ class FileOperation:
         return content
 
 
-def getAllResult():            
+def getAllResult(project):            
     obj = FileOperation()
-    project = ["Calculator"]
-    github_link = ["bla"]
-    content = obj.readFileContent("calculator\\")
+    content = obj.readFileContent(project)
     final_content = []
 
     for line in content:
@@ -54,7 +52,6 @@ def getAllResult():
     polymorphicMethod = getPolymorphicMethod(method_name)
     total_defined_method = public_methods+private_methods
     total_defined_attribute = public_attributes+private_attributes
-    project_name =  project[0]
 
     number_of_descendants = findDescendants(all_class_name)
     class_name = findAllClassName(all_class_name)
@@ -63,20 +60,45 @@ def getAllResult():
     descendants = len(polymorphicMethod)*len(method_name)
     
     TC = all_classes
-    LCOM = total_class_call / TC
+    if total_class_call !=0 and TC!=0:
+        LCOM = total_class_call / TC
+    else:
+        LCOM = 0
     line_of_code = len(final_content)
-    WMC = len(method_name)/TC
+    if TC!=0:
+        WMC = len(method_name)/TC
+    else:
+        WMC = 0
     NOC = number_of_descendants
     if len(polymorphicMethod)!= 0:
         POF = len(polymorphicMethod) / descendants
     else:
         POF = 0
-    MHF = private_methods / (public_methods+private_methods)
-    AHF = private_attributes / (public_attributes+private_attributes)
-    MIF = total_defined_method / len(method_name);
-    AIF = total_defined_attribute / (public_attributes+private_attributes)
-    COF = total_call / (TC * TC - TC)
-    COB = total_class_call / TC;
+    if private_methods!= 0:
+        MHF = private_methods / (public_methods+private_methods)
+    else:
+        MHF = 0
+    if private_attributes != 0:
+        AHF = private_attributes / (public_attributes+private_attributes)
+    else:
+        AHF = 0
+    
+    if total_defined_method != 0:
+        MIF = total_defined_method / len(method_name)
+    else:
+        MIF = 0
+    if total_defined_attribute !=0 :
+        AIF = total_defined_attribute / (public_attributes+private_attributes)
+    else:
+        AIF = 0
+    if total_call != 0 and (TC * TC) - TC !=0:
+        COF = total_call / ((TC * TC) - TC)
+    else:
+        COF = 0
+    if total_class_call!=0  and TC != 0:
+        COB = total_class_call / TC
+    else:
+        COB = 0
     
     
     return line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, COB, POF
