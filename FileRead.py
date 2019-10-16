@@ -7,9 +7,8 @@ Created on Tue Oct 15 19:45:41 2019
 import os
 import glob
 import io
-from FindProperties import getAllClass, getAllAttributesAndMethods
+from FindProperties import getAllClass, getAllAttributesAndMethods, getPolymorphicMethod, findDescendants, findAllCall, findAllClassName, findLCOM
 
-import re
 
 class FileOperation:
     
@@ -34,16 +33,52 @@ class FileOperation:
             
         content = list(map(lambda s: s.strip(), content))
         return content
-            
-obj = FileOperation()
-content = obj.readFileContent("calculator\\")
-final_content = []
 
-for line in content:
-    line = line.strip()
-    final_content.append(line)
+
+def getAllResult():            
+    obj = FileOperation()
+    project = ["Calculator"]
+    github_link = ["bla"]
+    content = obj.readFileContent("calculator\\")
+    final_content = []
+
+    for line in content:
+        line = line.strip()
+        final_content.append(line)
     
     
-public_classes, all_classes = getAllClass(final_content)
+    public_classes, all_classes, all_class_name = getAllClass(final_content)
 
-public_attributes, private_attributes, protected_attributes, public_methods, private_methods = getAllAttributesAndMethods(final_content)
+    public_attributes, private_attributes, protected_attributes, public_methods, private_methods, method_name = getAllAttributesAndMethods(final_content)
+
+    polymorphicMethod = getPolymorphicMethod(method_name)
+    total_defined_method = public_methods+private_methods
+    total_defined_attribute = public_attributes+private_attributes
+    project_name =  project[0]
+
+    number_of_descendants = findDescendants(all_class_name)
+    class_name = findAllClassName(all_class_name)
+    total_call, total_class_call = findAllCall(class_name, final_content)
+    
+    descendants = len(polymorphicMethod)*len(method_name)
+    
+    TC = all_classes
+    LCOM = total_class_call / TC
+    line_of_code = len(final_content)
+    WMC = len(method_name)/TC
+    NOC = number_of_descendants
+    if len(polymorphicMethod)!= 0:
+        POF = len(polymorphicMethod) / descendants
+    else:
+        POF = 0
+    MHF = private_methods / (public_methods+private_methods)
+    AHF = private_attributes / (public_attributes+private_attributes)
+    MIF = total_defined_method / len(method_name);
+    AIF = total_defined_attribute / (public_attributes+private_attributes)
+    COF = total_call / (TC * TC - TC)
+    COB = total_class_call / TC;
+    
+    
+    return line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, COB, POF
+
+
