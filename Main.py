@@ -9,7 +9,7 @@ from FileRead import getAllResult
 import csv
 
 filename = "Result.csv"
-header = ("Project Name", "Github Link", "Line of Code", "TC", "WMC", "NOC", "MHF", "AHF", "AHF", "MIF", "AIF", "LCOM","COF", "COB", "POF")
+header = ("Project Name", "Github Link", "Line of Code", "TC", "WMC", "NOC", "MHF", "AHF", "MIF", "AIF", "LCOM","COF", "CBO", "POF")
 
 project_name = ["Banking System", "Hospitalization Charges Application", "Bug Tracking Application", "Barcode Reader Library", "Huffman Encoding", 
                 "Ebay Oauth Authentication", "Task Management System", "Dental Clinic Management System","Invoice Managment System", "Cafe Management" ]
@@ -28,9 +28,9 @@ with open (filename, "w", newline = "") as csvfile:
     result.writerow(header)
 
     for i in range(len(project_path)):
-        line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, COB, POF = getAllResult(project_path[i])
+        line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, CBO, POF = getAllResult(project_path[i])
         
-        lst = [project_name[i], github_link[i] ,line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, COB, POF]
+        lst = [project_name[i], github_link[i] ,line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, CBO, POF]
         
         result.writerow(lst)
     print(getAllResult(project_path[i]))
