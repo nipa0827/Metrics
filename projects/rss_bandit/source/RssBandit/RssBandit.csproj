@@ -1,0 +1,256 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationIcon>Resources\App.ico</ApplicationIcon>
+    <AssemblyOriginatorKeyFile>..\rssbandit.org.snk</AssemblyOriginatorKeyFile>
+    <OutputType>WinExe</OutputType>
+    <StartAction>Program</StartAction>
+    <StartProgram>c:\windows\system32\notepad.exe</StartProgram>
+    <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
+    <ApplicationManifest>RssBandit.exe.manifest</ApplicationManifest>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <RuntimeIdentifiers>win-x86</RuntimeIdentifiers>
+    <Description>Your desktop news aggregator</Description>
+    <Title>RSS Bandit</Title>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug-AltPath'">
+    <DefineConstants>$(DefineConstants);ALT_CONFIG_PATH</DefineConstants>
+  </PropertyGroup>
+ 
+  <Target Name="__GetPublishItems" DependsOnTargets="ComputeFilesToPublish" Returns="@(_PublishItem)">
+
+    <ItemGroup>
+      <_PublishItem Include="@(ResolvedFileToPublish->'%(FullPath)')" TargetPath="%(ResolvedFileToPublish.RelativePath)" OutputGroup="__GetPublishItems" />
+      <_PublishItem Include="$(ProjectDepsFilePath)" TargetPath="$(ProjectDepsFileName)" />
+      <_PublishItem Include="$(ProjectRuntimeConfigFilePath)" TargetPath="$(ProjectRuntimeConfigFileName)" />
+    </ItemGroup>
+  </Target>
+
+
+  <ItemGroup>
+    <!-- workaround for https://github.com/dotnet/sdk/issues/3044 -->
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="2.1.0" ExcludeAssets="all" PrivateAssets="all" />
+    <Reference Include="blogExtension">
+      <Name>blogExtension</Name>
+      <HintPath>..\Common\Libraries\blogExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Eyefinder">
+      <Name>Eyefinder</Name>
+      <HintPath>..\Common\Libraries\Eyefinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.iTunesLib">
+      <Name>Interop.iTunesLib</Name>
+      <HintPath>..\Common\Libraries\Interop.iTunesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ThumbCache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\Libraries\Interop.ThumbCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib">
+      <Name>Interop.WMPLib</Name>
+      <HintPath>..\Common\Libraries\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement">
+      <Name>Microsoft.ApplicationBlocks.ExceptionManagement</Name>
+      <HintPath>..\Common\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces">
+      <Name>Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces</Name>
+      <HintPath>..\Common\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock">
+      <Name>SandDock</Name>
+      <HintPath>..\Common\Libraries\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>$(MSBuildProgramFiles32)\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WizardFramework">
+      <Name>WizardFramework</Name>
+      <HintPath>..\Common\Libraries\WizardFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\rssbandit.org.snk">
+      <Link>rssbandit.org.snk</Link>
+    </None>
+
+
+    <Compile Remove="plugins\**\*.cs" />
+    <EmbeddedResource Remove="plugins\**\*.resx" />
+    <EmbeddedResource Include="*.licenses" />
+    <None Remove="plugins\**" />
+
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+
+    <None Include="BanditHelp.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\SearchEnginesConfig.xsx">
+      <DependentUpon>SearchEnginesConfig.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\ShortcutSettings.xsx">
+      <DependentUpon>ShortcutSettings.xsd</DependentUpon>
+    </None>
+    <Content Include="..\RssBandit Installer\LICENSE.txt">
+      <Link>LICENSE.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\*.*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="templates\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Resources\TreeImages.png" />
+    <EmbeddedResource Include="Resources\AllToolImages.png" />
+    <EmbeddedResource Include="Resources\ListImages.png" />
+
+    <Resource Include="Resources\error.png" />
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Resources\App.ico" />
+    <EmbeddedResource Include="Resources\AppBusy.ico" />
+    <EmbeddedResource Include="Resources\AppTray.ico" />
+    <EmbeddedResource Include="Resources\Connected.ico" />
+    <EmbeddedResource Include="Resources\default-feedlist.xml" />
+    <EmbeddedResource Include="Resources\Disconnected.ico" />
+    <EmbeddedResource Include="Resources\feedlist2subscriptions.xslt" />
+    <EmbeddedResource Include="Resources\Html.16.png" />
+    <EmbeddedResource Include="Resources\Html.32.png" />
+    <EmbeddedResource Include="Resources\iecontext_subscribebandit.htm" />
+    <EmbeddedResource Include="Resources\iecontext_subscribefeed.htm" />
+    <EmbeddedResource Include="Resources\SearchEnginesConfig.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ShortcutSettings.xml" />
+    <EmbeddedResource Include="Resources\ShortcutSettings.xsd" />
+    <EmbeddedResource Update="Resources\SR.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UnreadFeedItems.ico" />
+    <EmbeddedResource Include="Resources\WizardTask.Failed.png" />
+    <EmbeddedResource Include="Resources\WizardTask.InProgress.png" />
+    <EmbeddedResource Include="Resources\WizardTask.Pending.png" />
+    <EmbeddedResource Include="Resources\WizardTask.Success.png" />
+    <EmbeddedResource Update="WinGui\Dialogs\DR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    
+   
+    <Compile Include="..\Common\Log.cs" />
+    <Compile Include="..\Common\VersionInfo.cs" />
+    <Compile Include="..\Common\ProfilerHelper.cs" />
+    <Compile Include="..\Common\ExceptionHelper.cs" />
+
+    <Compile Update="Resources\SR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SR.resx</DependentUpon>
+    </Compile>
+    
+    <Compile Update="WinGui\Dialogs\DR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DR.resx</DependentUpon>
+    </Compile>
+   
+    <None Include="Resources\hotnews.16.png" />
+    <Content Include="RssBandit.exe.log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RssBandit.exe.manifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChildProjects\IEControl\IEControl.csproj">
+      <Project>{f42f07f7-7cc9-4347-bf15-092a09ba0b31}</Project>
+      <Name>IEControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewsComponents\NewsComponents.csproj">
+      <Project>{9FE2BCC6-DEF9-478B-8A1C-B31836EE6BE4}</Project>
+      <Name>NewsComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RssBandit.AppServices\RssBandit.AppServices.csproj">
+      <Project>{5C79195B-AD8E-45B7-B405-AD32E6BF55B0}</Project>
+      <Name>RssBandit.AppServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>    
+    <PackageReference Include="CommonServiceLocator" Version="2.0.4" />
+    <PackageReference Include="Infragistics.WinForms.Shared">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.Misc">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.UltraWinEditors">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.UltraWinExplorerBar">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.UltraWinStatusBar">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.UltraWinTabControl">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.UltraWinToolbars">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="Infragistics.WinForms.Win.UltraWinTree">
+      <Version>17.2.20172.1000</Version>
+    </PackageReference>
+    <PackageReference Include="SingleInstanceHelper" Version="0.1.11" />
+    <PackageReference Include="SoapFormatter" Version="1.0.11" />
+    <PackageReference Include="System.Runtime.WindowsRuntime" Version="4.3.0" />
+    <PackageReference Include="Unity">
+      <Version>2.1.505.2</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="ClearLicenseFiles" BeforeTargets="Compile">
+    <ItemGroup>
+      <LicenseFiles Include="**\*.licx" />
+    </ItemGroup>
+    <!--<Copy SourceFiles="licenses.empty" DestinationFiles="%(LicenseFiles.FullPath)" />-->
+  </Target>
+</Project>

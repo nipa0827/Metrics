@@ -7,11 +7,13 @@ Created on Tue Oct 15 20:59:31 2019
 
 import re
 import math
-
+import random
 
 dataType = ["bool", "void", "String[]", "double", "float"]
 all_class_name = []
 name = []
+
+
 
 def findPublicClass(file_content):
     counter = 0
@@ -140,6 +142,7 @@ def getPolymorphicMethod(method_name):
     return polymorphic_method
     
 def findDescendants(all_class_name):
+    inherited_class = []
     descendants = 0
     for line in all_class_name:
         keywords = line.split(" ")
@@ -147,8 +150,9 @@ def findDescendants(all_class_name):
         if ":" in keywords:
             #print(line)
             descendants += 1
+            inherited_class.append(line)
             
-    return descendants
+    return descendants, inherited_class
     
     
 def findAllClassName(class_name):
@@ -158,7 +162,7 @@ def findAllClassName(class_name):
         newLine = line[1]
         
         newLine = newLine.split(" ")
-        name.append(newLine[1])
+        name.append(newLine[0])
     
     return name
     
@@ -205,8 +209,40 @@ def nCr(n, r):
     return result
     
     
+def findDIT(inherited_class):
     
+    parentClass = []
+    childClass = []
+    DIT = 0
     
+    for line in inherited_class:
+        line = line.split(" ")
+        idx = line.index(':')
+        
+        newDIT = 0
+        
+        counter = 1
+        parent = [line[idx+1]]
+        child = [line[idx-1]]
+        
+        parentClass.append(parent)
+        childClass.append(child)
+        
+        for newLine in inherited_class:  
+            if newLine != line:
+                newLine = newLine.split(' ')
+                idx = newLine.index(':')
+                
+                
+                if(parent==[newLine[idx-1]]):
+                    
+                    newDIT += 1
+                    DIT = max(newDIT, counter)
+        
+        
+    #print(DIT)
+
+    return DIT
     
     
     

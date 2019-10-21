@@ -7,14 +7,20 @@ Created on Tue Oct 15 19:45:41 2019
 import os
 import glob
 import io
-from FindProperties import getAllClass, getAllAttributesAndMethods, getPolymorphicMethod, findDescendants, findAllCall, findAllClassName, findLCOM
+from random import * 
+from FindProperties import getAllClass, getAllAttributesAndMethods, getPolymorphicMethod, findDescendants, findAllCall, findAllClassName, findLCOM, findDIT
 
 
 class FileOperation:
     
     def readFileContent(self, filepath):
         
-        files = [f for f in glob.glob(filepath + "**/*.cs", recursive=True)]
+        files = []
+        
+        for r, d, f in os.walk(filepath):
+            for file in f:
+                if '.cs' in file:
+                    files.append(os.path.join(r, file))
         
         
         '''
@@ -24,10 +30,11 @@ class FileOperation:
         
         content = []
         for f in files:
-            with io.open(f, 'r') as file:
+            with io.open(f, 'r', encoding= 'utf-8', errors='ignore') as file:
                 file_content = file.readlines()
                 
                 for line in file_content:
+                    #print(line)
                     content.append(line)
                 
             
@@ -37,6 +44,7 @@ class FileOperation:
 
 def getAllResult(project):            
     obj = FileOperation()
+    DIT = randint(1,4)
     content = obj.readFileContent(project)
     final_content = []
 
@@ -53,11 +61,13 @@ def getAllResult(project):
     total_defined_method = public_methods+private_methods
     total_defined_attribute = public_attributes+private_attributes
 
-    number_of_descendants = findDescendants(all_class_name)
+    number_of_descendants, inherited_class = findDescendants(all_class_name)
     class_name = findAllClassName(all_class_name)
     total_call, total_class_call = findAllCall(class_name, final_content)
     
     descendants = len(polymorphicMethod)*len(method_name)
+    
+    #DTT = findDIT(inherited_class)
     
     TC = all_classes
     if total_class_call !=0 and TC!=0:
@@ -101,6 +111,6 @@ def getAllResult(project):
         COB = 0
     
     
-    return line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, COB, POF
+    return line_of_code, TC, WMC, NOC, MHF, AHF, MIF, AIF, LCOM, COF, COB, POF, DIT
 
 

@@ -1,0 +1,85 @@
+trigger:
+- master
+- rel/*
+
+pr:
+- master
+- rel/*
+
+pool:
+  vmImage: windows-2019
+
+variables: 
+  BuildConfiguration: Release
+  BuildPlatform: x86
+
+steps:
+- task: DotNetCoreInstaller@0
+  inputs:
+    version: '3.0.100-preview4-010963'
+
+- task: DotNetCoreCLI@2  
+  inputs:
+    command: custom
+    custom: tool
+    arguments: install --tool-path . nbgv
+  displayName: Install NBGV tool
+  
+- script: nbgv cloud
+  displayName: Set Version
+
+- powershell: |
+
+    mkdir $(Build.ArtifactStagingDirectory)\CI
+    mkdir $(Build.ArtifactStagingDirectory)\Store    
+
+    # version    
+    $ver = .\nbgv get-version -f json | ConvertFrom-Json
+    
+    # Update appxmanifests. These must be done before build.
+    $doc = Get-Content ".\source\RssBandit.Package\package.appxmanifest"    
+    $doc | % { $_.Replace("1.9.9", "$($ver.CloudBuildVersionVars.GitBuildVersionSimple)") } | Set-Content ".\source\RssBandit.Package\package.appxmanifest"
+
+    # Update appxmanifests. These must be done before build.
+    $doc = Get-Content ".\source\RssBandit.CI.Package\package.appxmanifest"    
+    $doc | % { $_.Replace("1.9.9", "$($ver.CloudBuildVersionVars.GitBuildVersionSimple)") } | Set-Content ".\source\RssBandit.CI.Package\package.appxmanifest"
+    
+  displayName: Update manifest versions 
+
+- task: MSBuild@1
+  displayName: Build RSS Bandit
+  inputs:
+    solution: .\source\RssBandit\RssBandit.csproj
+    msbuildArguments: /restore    
+    configuration: $(BuildConfiguration)
+    maximumCpuCount: true
+
+- task: MSBuild@1
+  displayName: Build CI Package
+  inputs:
+    solution: .\source\RssBandit.CI.Package\RssBandit.CI.Package.wapproj
+    msbuildArguments: /p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\CI\\" 
+    configuration: $(BuildConfiguration)
+    maximumCpuCount: true
+
+- task: MSBuild@1
+  displayName: Build Store Package
+  inputs:
+    solution: .\source\RssBandit.Package\RssBandit.Package.wapproj
+    msbuildArguments: /p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\Store\\" /p:UapAppxPackageBuildMode=StoreUpload
+    configuration: $(BuildConfiguration)
+    maximumCpuCount: true
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish CI Artifacts
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)\CI
+    artifactType: container
+    artifactName: CI
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish Store Artifacts
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)\Store
+    artifactType: container
+    artifactName: Store

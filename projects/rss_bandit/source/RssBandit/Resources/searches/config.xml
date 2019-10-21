@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" open-newtab="true" xmlns="http://www.25hoursaday.com/2003/RSSBandit/searchConfiguration/">
+  <engine active="true">
+    <title>Google</title>
+    <search-link>https://www.google.com/search?q={0}</search-link>
+    <description>Search the web with Google...</description>
+    <image-name>google.ico</image-name>
+  </engine>
+  <engine active="true">
+    <title>Bing</title>
+    <search-link>https://www.bing.com/search?q={0}</search-link>
+    <description>Search the web with Bing...</description>
+    <image-name>bing.png</image-name>
+  </engine>
+</searchConfiguration>

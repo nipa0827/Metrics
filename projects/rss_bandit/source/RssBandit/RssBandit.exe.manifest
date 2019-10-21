@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"
+          xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"> 
+<description>RSS Bandit</description> 
+  <!-- Identify the application security requirements (Vista): -->
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel
+          level="asInvoker"
+          uiAccess="false"/>
+        </requestedPrivileges>
+       </security>
+  </trustInfo>
+  <!-- Activate Windows Common Controls v6 usage: -->
+  <dependency> 
+    <dependentAssembly> 
+        <assemblyIdentity 
+            type="win32" 
+            name="Microsoft.Windows.Common-Controls" 
+            version="6.0.0.0" 
+            processorArchitecture="*" 
+            publicKeyToken="6595b64144ccf1df" 
+            language="*" 
+        /> 
+    </dependentAssembly> 
+  </dependency>
+
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Windows 10 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>
+    </application>
+  </compatibility>
+
+  <!-- Indicates that the application is DPI-aware and will not be automatically scaled by Windows at higher
+       DPIs. Windows Presentation Foundation (WPF) applications are automatically DPI-aware and do not need 
+       to opt in. Windows Forms applications targeting .NET Framework 4.6 that opt into this setting, should 
+       also set the 'EnableWindowsFormsHighDpiAutoResizing' setting to 'true' in their app.config. -->
+
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <!-- Per Monitor V1 [OS >= Windows 8.1] 
+         Values: False, True, Per-monitor, True/PM -->
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
+        true/PM
+      </dpiAware>
+      <!-- Per Monitor V1 [OS >= Windows 10 Anniversary Update (1607, 10.0.14393, Redstone 1)]
+         Values: Unaware, System, PerMonitor -->
+      <!-- Per Monitor V2 [OS >= Windows 10 Creators Update (1703, 10.0.15063, Redstone 2)]
+         Value: PerMonitorV2 -->
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">
+        PerMonitorV2, PerMonitor
+      </dpiAwareness>
+    </windowsSettings>
+  </application>
+  
+</assembly>

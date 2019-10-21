@@ -1,0 +1,2717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_btnImmediateFinish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="_btnImmediateFinish.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="_btnImmediateFinish.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="_btnImmediateFinish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 395</value>
+  </data>
+  <data name="_btnImmediateFinish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_btnImmediateFinish.TabIndex" type="System.Int32, mscorlib">
+    <value>1008</value>
+  </data>
+  <data name="_btnImmediateFinish.Text" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="_btnImmediateFinish.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;_btnImmediateFinish.Name" xml:space="preserve">
+    <value>_btnImmediateFinish</value>
+  </data>
+  <data name="&gt;&gt;_btnImmediateFinish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_btnImmediateFinish.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;_btnImmediateFinish.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkDisplayWelcome.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="chkDisplayWelcome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkDisplayWelcome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 223</value>
+  </data>
+  <data name="chkDisplayWelcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 32</value>
+  </data>
+  <data name="chkDisplayWelcome.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkDisplayWelcome.Text" xml:space="preserve">
+    <value>Always display this Wizard Welcome Page</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWelcome.Name" xml:space="preserve">
+    <value>chkDisplayWelcome</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWelcome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWelcome.Parent" xml:space="preserve">
+    <value>pageWelcome</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWelcome.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblWelcomeInfoBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblWelcomeInfoBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblWelcomeInfoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 138</value>
+  </data>
+  <data name="lblWelcomeInfoBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 81</value>
+  </data>
+  <data name="lblWelcomeInfoBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblWelcomeInfoBox.Text" xml:space="preserve">
+    <value>The wizard requires at some steps you are connected to the Internet! If not, ensure to connect your computer now.</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeInfoBox.Name" xml:space="preserve">
+    <value>lblWelcomeInfoBox</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeInfoBox.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.InformationBox, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeInfoBox.Parent" xml:space="preserve">
+    <value>pageWelcome</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeInfoBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblWelcomeHelpMessage1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblWelcomeHelpMessage1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWelcomeHelpMessage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 22</value>
+  </data>
+  <data name="lblWelcomeHelpMessage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 51</value>
+  </data>
+  <data name="lblWelcomeHelpMessage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblWelcomeHelpMessage1.Text" xml:space="preserve">
+    <value>• Examining an HTML page for available feeds or find feeds by specific key words.</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage1.Name" xml:space="preserve">
+    <value>lblWelcomeHelpMessage1</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage1.Parent" xml:space="preserve">
+    <value>pageWelcome</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblWelcomeHelpMessage2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblWelcomeHelpMessage2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWelcomeHelpMessage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 73</value>
+  </data>
+  <data name="lblWelcomeHelpMessage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 65</value>
+  </data>
+  <data name="lblWelcomeHelpMessage2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblWelcomeHelpMessage2.Text" xml:space="preserve">
+    <value>• Validating the subscription source and manage additional properties maybe required for a successful request (e.g. credentials).</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage2.Name" xml:space="preserve">
+    <value>lblWelcomeHelpMessage2</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage2.Parent" xml:space="preserve">
+    <value>pageWelcome</value>
+  </data>
+  <data name="&gt;&gt;lblWelcomeHelpMessage2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pageWelcome.IntroductionText" xml:space="preserve">
+    <value>This wizard helps you:</value>
+  </data>
+  <data name="pageWelcome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 80</value>
+  </data>
+  <data name="radioNewByNNTPGroup.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="radioNewByNNTPGroup.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="radioNewByNNTPGroup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioNewByNNTPGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 153</value>
+  </data>
+  <data name="radioNewByNNTPGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 32</value>
+  </data>
+  <data name="radioNewByNNTPGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="radioNewByNNTPGroup.Text" xml:space="preserve">
+    <value>I want to subscribe to a NNTP newsgroup</value>
+  </data>
+  <data name="&gt;&gt;radioNewByNNTPGroup.Name" xml:space="preserve">
+    <value>radioNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;radioNewByNNTPGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioNewByNNTPGroup.Parent" xml:space="preserve">
+    <value>pageHowToSelection</value>
+  </data>
+  <data name="&gt;&gt;radioNewByNNTPGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHowToSubscribeIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblHowToSubscribeIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHowToSubscribeIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="lblHowToSubscribeIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 73</value>
+  </data>
+  <data name="lblHowToSubscribeIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblHowToSubscribeIntro.Text" xml:space="preserve">
+    <value>Please select one of the options below you like to add a new subscription:</value>
+  </data>
+  <data name="&gt;&gt;lblHowToSubscribeIntro.Name" xml:space="preserve">
+    <value>lblHowToSubscribeIntro</value>
+  </data>
+  <data name="&gt;&gt;lblHowToSubscribeIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHowToSubscribeIntro.Parent" xml:space="preserve">
+    <value>pageHowToSelection</value>
+  </data>
+  <data name="&gt;&gt;lblHowToSubscribeIntro.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioNewByTopicSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="radioNewByTopicSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="radioNewByTopicSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioNewByTopicSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 117</value>
+  </data>
+  <data name="radioNewByTopicSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 31</value>
+  </data>
+  <data name="radioNewByTopicSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="radioNewByTopicSearch.Text" xml:space="preserve">
+    <value>I want to search for subscriptions by key word(s)</value>
+  </data>
+  <data name="&gt;&gt;radioNewByTopicSearch.Name" xml:space="preserve">
+    <value>radioNewByTopicSearch</value>
+  </data>
+  <data name="&gt;&gt;radioNewByTopicSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioNewByTopicSearch.Parent" xml:space="preserve">
+    <value>pageHowToSelection</value>
+  </data>
+  <data name="&gt;&gt;radioNewByTopicSearch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioNewByURL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="radioNewByURL.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="radioNewByURL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioNewByURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 80</value>
+  </data>
+  <data name="radioNewByURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 32</value>
+  </data>
+  <data name="radioNewByURL.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radioNewByURL.Text" xml:space="preserve">
+    <value>I will enter the URL of the web feed or page</value>
+  </data>
+  <data name="&gt;&gt;radioNewByURL.Name" xml:space="preserve">
+    <value>radioNewByURL</value>
+  </data>
+  <data name="&gt;&gt;radioNewByURL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioNewByURL.Parent" xml:space="preserve">
+    <value>pageHowToSelection</value>
+  </data>
+  <data name="&gt;&gt;radioNewByURL.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pageHowToSelection.Description" xml:space="preserve">
+    <value>A subscription stores news items from specific sources. How would you like to add a new subscription?</value>
+  </data>
+  <data name="pageHowToSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 17</value>
+  </metadata>
+  <data name="linkLabelCanonicalUrl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="linkLabelCanonicalUrl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelCanonicalUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 142</value>
+  </data>
+  <data name="linkLabelCanonicalUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>438, 33</value>
+  </data>
+  <data name="linkLabelCanonicalUrl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkLabelCanonicalUrl.ToolTip" xml:space="preserve">
+    <value>The canonicalized URL we will use</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCanonicalUrl.Name" xml:space="preserve">
+    <value>linkLabelCanonicalUrl</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCanonicalUrl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCanonicalUrl.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCanonicalUrl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureHelpAutodiscover.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALDAAA
+        CwwBP0AiyAAAAjFJREFUOE+lU01rE1EU7U/IT5ifUBRcuMrS5aANZBnBRRcqwYUEQRwKQmhQI1I0WDpj
+        VWwk1dnUjtHaEW21FOnQWo1tmCQlatpM06dTpR+a473zWtNoN+KDw9x73z3nfsxMB4D/wr7BiTkft/Mr
+        SN4poWdgAX25IkZefqSrv3PbnFl3A9nxBvT8Msr1LXxZ34bwt8jexKVsAUndQf7VEqXuI8Dk+/YavG9N
+        2A6gDQFqUoJt2xFw15q40DeJkedFovwhwJVXvzdh2EA4ARgWIDY4DygLIH6DYwIlEjmTesrhlsDE23U8
+        mmkElZnMyXzM10AsLZ8sFk4IsgV06x0y2WlOkQJ3n9TxSfwIWg3HZdtpE+gkW+kWiKepBTqqJhBLOlhw
+        fRw/N8whKZC6txQsTNUkqbNbQiHEiMzV7YKAotpQojZqno9DkWstgYu3XNr2dtC+JFJyTFAnsrJpk0/E
+        kGrS00St/hUH1Ct8JQUyD0qoeJs0uyQq0XKA9JAUCKkOQQqoCRuFYhVdpwy+kgKjk59hOV6wICaGokxw
+        aKQy7YV8Jh8xAxhWGcPWPHpvjrUEGKnBOSx6P6nqDoHANp9dsmY4+LDi4dhJHdOzFb5qCYxNVdGTmYLb
+        oG+BqqiaE8zNYJtji9VVRKj1gRy91x3ebwHG6IsSzl4eh/H4PWbmK1imbdfqfjAzt91FlfU9ZEabwC76
+        c29w4vxDHI5ex8GjVxE5PYhU/zNqu/0/YLQ5/w50/AJjKwa3C0FtvAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="pictureHelpAutodiscover.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureHelpAutodiscover.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 244</value>
+  </data>
+  <data name="pictureHelpAutodiscover.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 22</value>
+  </data>
+  <data name="pictureHelpAutodiscover.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpAutodiscover.Name" xml:space="preserve">
+    <value>pictureHelpAutodiscover</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpAutodiscover.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpAutodiscover.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpAutodiscover.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblAutodiscoverHelp.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblAutodiscoverHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAutodiscoverHelp.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 12</value>
+  </data>
+  <data name="lblAutodiscoverHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 240</value>
+  </data>
+  <data name="lblAutodiscoverHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 31</value>
+  </data>
+  <data name="lblAutodiscoverHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblAutodiscoverHelp.Text" xml:space="preserve">
+    <value>Autodiscover</value>
+  </data>
+  <data name="lblAutodiscoverHelp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblAutodiscoverHelp.Name" xml:space="preserve">
+    <value>lblAutodiscoverHelp</value>
+  </data>
+  <data name="&gt;&gt;lblAutodiscoverHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAutodiscoverHelp.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;lblAutodiscoverHelp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkNewByURLValidate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="checkNewByURLValidate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="checkNewByURLValidate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkNewByURLValidate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 171</value>
+  </data>
+  <data name="checkNewByURLValidate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 32</value>
+  </data>
+  <data name="checkNewByURLValidate.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="checkNewByURLValidate.Text" xml:space="preserve">
+    <value>Autodiscover and verify the feed</value>
+  </data>
+  <data name="&gt;&gt;checkNewByURLValidate.Name" xml:space="preserve">
+    <value>checkNewByURLValidate</value>
+  </data>
+  <data name="&gt;&gt;checkNewByURLValidate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkNewByURLValidate.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;checkNewByURLValidate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblNewByURLIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNewByURLIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNewByURLIntro.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="lblNewByURLIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="lblNewByURLIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 73</value>
+  </data>
+  <data name="lblNewByURLIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNewByURLIntro.Text" xml:space="preserve">
+    <value>If you are not sure about the web feed's URL, enter the web browser address of the web site or page and RSS Bandit will try to autodiscover the feed.</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURLIntro.Name" xml:space="preserve">
+    <value>lblNewByURLIntro</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURLIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURLIntro.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURLIntro.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtNewByURL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtNewByURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 109</value>
+  </data>
+  <data name="txtNewByURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>438, 24</value>
+  </data>
+  <data name="txtNewByURL.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtNewByURL.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtNewByURL.Name" xml:space="preserve">
+    <value>txtNewByURL</value>
+  </data>
+  <data name="&gt;&gt;txtNewByURL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNewByURL.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;txtNewByURL.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblNewByURL.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNewByURL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNewByURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 87</value>
+  </data>
+  <data name="lblNewByURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 20</value>
+  </data>
+  <data name="lblNewByURL.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblNewByURL.Text" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURL.Name" xml:space="preserve">
+    <value>lblNewByURL</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURL.Parent" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;lblNewByURL.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pageNewByURL.Description" xml:space="preserve">
+    <value>Adds a subscription whose web feed can be found at the specified location.</value>
+  </data>
+  <data name="pageNewByURL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="lblValidationTaskImage2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK7QAA
+        Cu0BAohJwQAAAbdJREFUOE+lkktLAlEUx8NaWuuYXEUfQdwIEUSt2pgILXysDR0ifCA+FgqTCyUZEUFB
+        BkVQGRpNBl2pixbRVvAblLSttXM65zJYMBP0OPBjLvf+z+/eO9wNAPgXppO/4XOgVzKZPEwkEgp+X4ho
+        NHrv9/vPcMmKWFgIy1SQTqevsXlVq9VgNpvBdDqFer0ONOfz+QSM7CJblDUI9J1XkiTBaDRaC4bDITQa
+        DSax2+28LrEYBPF4/C6TybBwt9uFfr8PiqJAp9Nhp8DTgdfrnWDzEWI1CGKx2DPuAtlsForFIpTLZUah
+        UAAS0xrP80tsvkQ4gyASiSxpF0EQoFQqQbVaZYiiCPl8nknC4fArNmeRfYMgFAqpuVwOKpUKNJtN6PV6
+        IMsytFotJiKx2+1++FaA9zvHY2rUPBgMYDKZrH9iu92mK2gcx0nYHEKMV8CyBgKB21QqpamqCvP5HBaL
+        BYzHY/qBmtPplDFTQo4payagR8I5HI6Yx+N5DAaDb8i7y+V6stlstLOIXFCGsmYCKnokFDhBrpAbHRqf
+        InuI+UP6UpvINmJDDnRovIPQGiuD4K+YTv4c2PgAAn8xOlngUWUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="lblValidationTaskImage2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblValidationTaskImage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 171</value>
+  </data>
+  <data name="lblValidationTaskImage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="lblValidationTaskImage2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage2.Name" xml:space="preserve">
+    <value>lblValidationTaskImage2</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage2.Parent" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblValidationTask2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblValidationTask2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblValidationTask2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 171</value>
+  </data>
+  <data name="lblValidationTask2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 51</value>
+  </data>
+  <data name="lblValidationTask2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblValidationTask2.Text" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask2.Name" xml:space="preserve">
+    <value>lblValidationTask2</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask2.Parent" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblValidationTaskImage1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK7QAA
+        Cu0BAohJwQAAAeNJREFUOE+1k81LVFEYxt+0TTlZLULxYyPRoha1iVqpIIqCIEiIBu00tEaJIu0DRApm
+        UHJGXahIhJ/M0AwGwajJNJFWyOgfIELQwtIhHcO5OuJw79NzLkJoM6KCD/zgcM7vvO89954rx5kTezhg
+        +qK50rXxThybv0zafr+XJn8pVywkyXQSZiD2UByaXjy0gs7pP3CSkuFVJDkiujydtNFIJydN9790snO7
+        ppe7w3gW2EDrTBT2b1E8/hhBmSsMebWuS15tA01VJM6TtIZHzzlXUezVcHtsC3cD26jxb6PSt4UCjwZL
+        +xrk/ocAzXyijrMntpWf4ojgdG8M2SMGLr+FSeawgeSeGMSpQZq/L9G8RzLMPbvyMrQk3TGkvgFyXMBV
+        D/ECl9zA+X5AenTI84UQzRckx9yzK0/mfSl9Oq6wa5EPqPADVaRkDLjGQmdfs8Ad1xeaCQpUT5SfsoeM
+        wnGg+jPQPAu0zAF100DpJJBiWzYk63o/TSuJcwT1Ymo+OS/YF436KR3uH8DoIvDoq440zkluo5dOBykw
+        3ThRnyZDblgb5ZZnxtIQXLdYgxEpGwxK9k3VuYtUms4+F0pdEiUUkgfEvoMaF5FMkuAi/UsyOUOyyMUd
+        1DiVqLUD54g/06Ei8hfu0OgitMDfogAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lblValidationTaskImage1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblValidationTaskImage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 117</value>
+  </data>
+  <data name="lblValidationTaskImage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="lblValidationTaskImage1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage1.Name" xml:space="preserve">
+    <value>lblValidationTaskImage1</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage1.Parent" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTaskImage1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblValidationTask1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblValidationTask1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblValidationTask1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 117</value>
+  </data>
+  <data name="lblValidationTask1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 51</value>
+  </data>
+  <data name="lblValidationTask1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblValidationTask1.Text" xml:space="preserve">
+    <value>InProgress</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask1.Name" xml:space="preserve">
+    <value>lblValidationTask1</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask1.Parent" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;lblValidationTask1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pbar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pbar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 80</value>
+  </data>
+  <data name="pbar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 20</value>
+  </data>
+  <data name="pbar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pbar.Name" xml:space="preserve">
+    <value>pbar</value>
+  </data>
+  <data name="&gt;&gt;pbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbar.Parent" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;pbar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblWaitStepIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblWaitStepIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWaitStepIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 5</value>
+  </data>
+  <data name="lblWaitStepIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>502, 39</value>
+  </data>
+  <data name="lblWaitStepIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblWaitStepIntro.Text" xml:space="preserve">
+    <value>This step applies the following task(s):</value>
+  </data>
+  <data name="&gt;&gt;lblWaitStepIntro.Name" xml:space="preserve">
+    <value>lblWaitStepIntro</value>
+  </data>
+  <data name="&gt;&gt;lblWaitStepIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWaitStepIntro.Parent" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;lblWaitStepIntro.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pageValidateUrl.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pageValidateUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="listFeeds.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="listFeeds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 146</value>
+  </data>
+  <data name="listFeeds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 131</value>
+  </data>
+  <data name="listFeeds.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;listFeeds.Name" xml:space="preserve">
+    <value>listFeeds</value>
+  </data>
+  <data name="&gt;&gt;listFeeds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listFeeds.Parent" xml:space="preserve">
+    <value>pageFoundMultipleFeeds</value>
+  </data>
+  <data name="&gt;&gt;listFeeds.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 5</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 50</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint1.Text" xml:space="preserve">
+    <value>From the list below, select a feed, and then click Next to specify the details about the new subscription.</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint1.Name" xml:space="preserve">
+    <value>lblMultipleFeedsFoundHint1</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint1.Parent" xml:space="preserve">
+    <value>pageFoundMultipleFeeds</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 53</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 56</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblMultipleFeedsFoundHint2.Text" xml:space="preserve">
+    <value>If the required feed cannot be found in the list, please click Back to initiate a new search.</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint2.Name" xml:space="preserve">
+    <value>lblMultipleFeedsFoundHint2</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint2.Parent" xml:space="preserve">
+    <value>pageFoundMultipleFeeds</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFoundHint2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblMultipleFeedsFound.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblMultipleFeedsFound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblMultipleFeedsFound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 121</value>
+  </data>
+  <data name="lblMultipleFeedsFound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>499, 25</value>
+  </data>
+  <data name="lblMultipleFeedsFound.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblMultipleFeedsFound.Text" xml:space="preserve">
+    <value>Feeds found:</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFound.Name" xml:space="preserve">
+    <value>lblMultipleFeedsFound</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFound.Parent" xml:space="preserve">
+    <value>pageFoundMultipleFeeds</value>
+  </data>
+  <data name="&gt;&gt;lblMultipleFeedsFound.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pageFoundMultipleFeeds.Description" xml:space="preserve">
+    <value>Please select the desired feed for subscription</value>
+  </data>
+  <data name="pageFoundMultipleFeeds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="lblFeedSources.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFeedSources.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFeedSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 119</value>
+  </data>
+  <data name="lblFeedSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 19</value>
+  </data>
+  <data name="lblFeedSources.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblFeedSources.Text" xml:space="preserve">
+    <value>Subscription Source:</value>
+  </data>
+  <data name="&gt;&gt;lblFeedSources.Name" xml:space="preserve">
+    <value>lblFeedSources</value>
+  </data>
+  <data name="&gt;&gt;lblFeedSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFeedSources.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;lblFeedSources.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboFeedSources.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cboFeedSources.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="cboFeedSources.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cboFeedSources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 141</value>
+  </data>
+  <data name="cboFeedSources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 25</value>
+  </data>
+  <data name="cboFeedSources.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboFeedSources.Name" xml:space="preserve">
+    <value>cboFeedSources</value>
+  </data>
+  <data name="&gt;&gt;cboFeedSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboFeedSources.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;cboFeedSources.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblFeedTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFeedTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFeedTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 61</value>
+  </data>
+  <data name="lblFeedTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 19</value>
+  </data>
+  <data name="lblFeedTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblFeedTitle.Text" xml:space="preserve">
+    <value>&amp;Title:</value>
+  </data>
+  <data name="&gt;&gt;lblFeedTitle.Name" xml:space="preserve">
+    <value>lblFeedTitle</value>
+  </data>
+  <data name="&gt;&gt;lblFeedTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFeedTitle.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;lblFeedTitle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblFeedCategory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFeedCategory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFeedCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 175</value>
+  </data>
+  <data name="lblFeedCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 19</value>
+  </data>
+  <data name="lblFeedCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblFeedCategory.Text" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCategory.Name" xml:space="preserve">
+    <value>lblFeedCategory</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCategory.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCategory.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cboFeedCategory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cboFeedCategory.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="cboFeedCategory.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cboFeedCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 197</value>
+  </data>
+  <data name="cboFeedCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 25</value>
+  </data>
+  <data name="cboFeedCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cboFeedCategory.Name" xml:space="preserve">
+    <value>cboFeedCategory</value>
+  </data>
+  <data name="&gt;&gt;cboFeedCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboFeedCategory.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;cboFeedCategory.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblPageTitleCredentialsIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblPageTitleCredentialsIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPageTitleCredentialsIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 5</value>
+  </data>
+  <data name="lblPageTitleCredentialsIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 51</value>
+  </data>
+  <data name="lblPageTitleCredentialsIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPageTitleCredentialsIntro.Text" xml:space="preserve">
+    <value>Here you can specify the title for the subscription, the feed source and add it to a new or existing category</value>
+  </data>
+  <data name="&gt;&gt;lblPageTitleCredentialsIntro.Name" xml:space="preserve">
+    <value>lblPageTitleCredentialsIntro</value>
+  </data>
+  <data name="&gt;&gt;lblPageTitleCredentialsIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPageTitleCredentialsIntro.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;lblPageTitleCredentialsIntro.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtFeedTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFeedTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 83</value>
+  </data>
+  <data name="txtFeedTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 24</value>
+  </data>
+  <data name="txtFeedTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtFeedTitle.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtFeedTitle.Name" xml:space="preserve">
+    <value>txtFeedTitle</value>
+  </data>
+  <data name="&gt;&gt;txtFeedTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFeedTitle.Parent" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;txtFeedTitle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pageTitleCategory.Description" xml:space="preserve">
+    <value>Please verify the title and select a category</value>
+  </data>
+  <data name="pageTitleCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="lblFeedCredentialsIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFeedCredentialsIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFeedCredentialsIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="lblFeedCredentialsIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 63</value>
+  </data>
+  <data name="lblFeedCredentialsIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblFeedCredentialsIntro.Text" xml:space="preserve">
+    <value>Here you can specify the username and password need to access the subscription (if any)</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCredentialsIntro.Name" xml:space="preserve">
+    <value>lblFeedCredentialsIntro</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCredentialsIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCredentialsIntro.Parent" xml:space="preserve">
+    <value>pageFeedCredentials</value>
+  </data>
+  <data name="&gt;&gt;lblFeedCredentialsIntro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblUsername.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblUsername.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 80</value>
+  </data>
+  <data name="lblUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 20</value>
+  </data>
+  <data name="lblUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblUsername.Text" xml:space="preserve">
+    <value>&amp;Username:</value>
+  </data>
+  <data name="&gt;&gt;lblUsername.Name" xml:space="preserve">
+    <value>lblUsername</value>
+  </data>
+  <data name="&gt;&gt;lblUsername.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUsername.Parent" xml:space="preserve">
+    <value>pageFeedCredentials</value>
+  </data>
+  <data name="&gt;&gt;lblUsername.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 102</value>
+  </data>
+  <data name="textUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 24</value>
+  </data>
+  <data name="textUser.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="textUser.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textUser.Name" xml:space="preserve">
+    <value>textUser</value>
+  </data>
+  <data name="&gt;&gt;textUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textUser.Parent" xml:space="preserve">
+    <value>pageFeedCredentials</value>
+  </data>
+  <data name="&gt;&gt;textUser.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 157</value>
+  </data>
+  <data name="lblPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 19</value>
+  </data>
+  <data name="lblPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblPassword.Text" xml:space="preserve">
+    <value>&amp;Password:</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.Name" xml:space="preserve">
+    <value>lblPassword</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.Parent" xml:space="preserve">
+    <value>pageFeedCredentials</value>
+  </data>
+  <data name="&gt;&gt;lblPassword.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="textPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 179</value>
+  </data>
+  <data name="textPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="textPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 24</value>
+  </data>
+  <data name="textPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="textPassword.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textPassword.Name" xml:space="preserve">
+    <value>textPassword</value>
+  </data>
+  <data name="&gt;&gt;textPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textPassword.Parent" xml:space="preserve">
+    <value>pageFeedCredentials</value>
+  </data>
+  <data name="&gt;&gt;textPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pageFeedCredentials.Description" xml:space="preserve">
+    <value>Enter credential informations if required.</value>
+  </data>
+  <data name="pageFeedCredentials.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="comboMaxItemAge.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="comboMaxItemAge.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="comboMaxItemAge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 204</value>
+  </data>
+  <data name="comboMaxItemAge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 25</value>
+  </data>
+  <data name="comboMaxItemAge.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;comboMaxItemAge.Name" xml:space="preserve">
+    <value>comboMaxItemAge</value>
+  </data>
+  <data name="&gt;&gt;comboMaxItemAge.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboMaxItemAge.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;comboMaxItemAge.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboUpdateFrequency.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="cboUpdateFrequency.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cboUpdateFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 171</value>
+  </data>
+  <data name="cboUpdateFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 25</value>
+  </data>
+  <data name="cboUpdateFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cboUpdateFrequency.Name" xml:space="preserve">
+    <value>cboUpdateFrequency</value>
+  </data>
+  <data name="&gt;&gt;cboUpdateFrequency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboUpdateFrequency.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;cboUpdateFrequency.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 204</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 32</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.Text" xml:space="preserve">
+    <value>Remove items older than:</value>
+  </data>
+  <data name="lblRemoveItemsOlderThan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblRemoveItemsOlderThan.Name" xml:space="preserve">
+    <value>lblRemoveItemsOlderThan</value>
+  </data>
+  <data name="&gt;&gt;lblRemoveItemsOlderThan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRemoveItemsOlderThan.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;lblRemoveItemsOlderThan.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblMinutes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblMinutes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblMinutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 175</value>
+  </data>
+  <data name="lblMinutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 19</value>
+  </data>
+  <data name="lblMinutes.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblMinutes.Text" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="&gt;&gt;lblMinutes.Name" xml:space="preserve">
+    <value>lblMinutes</value>
+  </data>
+  <data name="&gt;&gt;lblMinutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMinutes.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;lblMinutes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblUpdateFrequency.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblUpdateFrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUpdateFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 171</value>
+  </data>
+  <data name="lblUpdateFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 32</value>
+  </data>
+  <data name="lblUpdateFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblUpdateFrequency.Text" xml:space="preserve">
+    <value>Update frequency:</value>
+  </data>
+  <data name="lblUpdateFrequency.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblUpdateFrequency.Name" xml:space="preserve">
+    <value>lblUpdateFrequency</value>
+  </data>
+  <data name="&gt;&gt;lblUpdateFrequency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUpdateFrequency.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;lblUpdateFrequency.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 117</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 31</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="checkMarkItemsReadOnExiting.Text" xml:space="preserve">
+    <value>&amp;Mark items as read on exiting feed</value>
+  </data>
+  <data name="&gt;&gt;checkMarkItemsReadOnExiting.Name" xml:space="preserve">
+    <value>checkMarkItemsReadOnExiting</value>
+  </data>
+  <data name="&gt;&gt;checkMarkItemsReadOnExiting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkMarkItemsReadOnExiting.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;checkMarkItemsReadOnExiting.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblFeedItemControlIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFeedItemControlIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFeedItemControlIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 5</value>
+  </data>
+  <data name="lblFeedItemControlIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 63</value>
+  </data>
+  <data name="lblFeedItemControlIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblFeedItemControlIntro.Text" xml:space="preserve">
+    <value>Here you can change the application behavior for the "New Items received" event, the maximum item age to control the time items get automatically purged and the update request frequency.</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemControlIntro.Name" xml:space="preserve">
+    <value>lblFeedItemControlIntro</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemControlIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemControlIntro.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemControlIntro.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 80</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 32</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="checkEnableAlertOnNewItems.Text" xml:space="preserve">
+    <value>&amp;Enable alert windows on received items</value>
+  </data>
+  <data name="&gt;&gt;checkEnableAlertOnNewItems.Name" xml:space="preserve">
+    <value>checkEnableAlertOnNewItems</value>
+  </data>
+  <data name="&gt;&gt;checkEnableAlertOnNewItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkEnableAlertOnNewItems.Parent" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;checkEnableAlertOnNewItems.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pageFeedItemControl.Description" xml:space="preserve">
+    <value>Optional Subscription Properties related to the feed and it's items</value>
+  </data>
+  <data name="pageFeedItemControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="comboFormatters.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboFormatters.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="comboFormatters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 149</value>
+  </data>
+  <data name="comboFormatters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 25</value>
+  </data>
+  <data name="comboFormatters.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;comboFormatters.Name" xml:space="preserve">
+    <value>comboFormatters</value>
+  </data>
+  <data name="&gt;&gt;comboFormatters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboFormatters.Parent" xml:space="preserve">
+    <value>pageFeedItemDisplay</value>
+  </data>
+  <data name="&gt;&gt;comboFormatters.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblFormatterStylesheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFormatterStylesheet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFormatterStylesheet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 128</value>
+  </data>
+  <data name="lblFormatterStylesheet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 19</value>
+  </data>
+  <data name="lblFormatterStylesheet.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblFormatterStylesheet.Text" xml:space="preserve">
+    <value>Formatter &amp;Stylesheet:</value>
+  </data>
+  <data name="&gt;&gt;lblFormatterStylesheet.Name" xml:space="preserve">
+    <value>lblFormatterStylesheet</value>
+  </data>
+  <data name="&gt;&gt;lblFormatterStylesheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFormatterStylesheet.Parent" xml:space="preserve">
+    <value>pageFeedItemDisplay</value>
+  </data>
+  <data name="&gt;&gt;lblFormatterStylesheet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkUseCustomFormatter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="checkUseCustomFormatter.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="checkUseCustomFormatter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkUseCustomFormatter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 80</value>
+  </data>
+  <data name="checkUseCustomFormatter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 32</value>
+  </data>
+  <data name="checkUseCustomFormatter.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="checkUseCustomFormatter.Text" xml:space="preserve">
+    <value>Use a &amp;custom formatter</value>
+  </data>
+  <data name="&gt;&gt;checkUseCustomFormatter.Name" xml:space="preserve">
+    <value>checkUseCustomFormatter</value>
+  </data>
+  <data name="&gt;&gt;checkUseCustomFormatter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkUseCustomFormatter.Parent" xml:space="preserve">
+    <value>pageFeedItemDisplay</value>
+  </data>
+  <data name="&gt;&gt;checkUseCustomFormatter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblFeedItemDisplayIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFeedItemDisplayIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFeedItemDisplayIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 5</value>
+  </data>
+  <data name="lblFeedItemDisplayIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 63</value>
+  </data>
+  <data name="lblFeedItemDisplayIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblFeedItemDisplayIntro.Text" xml:space="preserve">
+    <value>Use the default feed/item formatting or select a custom XSLT formatter.</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemDisplayIntro.Name" xml:space="preserve">
+    <value>lblFeedItemDisplayIntro</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemDisplayIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemDisplayIntro.Parent" xml:space="preserve">
+    <value>pageFeedItemDisplay</value>
+  </data>
+  <data name="&gt;&gt;lblFeedItemDisplayIntro.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pageFeedItemDisplay.Description" xml:space="preserve">
+    <value>Optional Properties to control the display of the feed and it's items</value>
+  </data>
+  <data name="pageFeedItemDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="pnlCompleting.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblCompletionMessage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblCompletionMessage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCompletionMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 10</value>
+  </data>
+  <data name="lblCompletionMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>423, 101</value>
+  </data>
+  <data name="lblCompletionMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblCompletionMessage.Text" xml:space="preserve">
+    <value>The subscription is ready to be added to your subscriptions list.</value>
+  </data>
+  <data name="&gt;&gt;lblCompletionMessage.Name" xml:space="preserve">
+    <value>lblCompletionMessage</value>
+  </data>
+  <data name="&gt;&gt;lblCompletionMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCompletionMessage.Parent" xml:space="preserve">
+    <value>pnlCompleting</value>
+  </data>
+  <data name="&gt;&gt;lblCompletionMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlCompleting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="pnlCompleting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 189</value>
+  </data>
+  <data name="pnlCompleting.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pnlCompleting.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pnlCompleting.Name" xml:space="preserve">
+    <value>pnlCompleting</value>
+  </data>
+  <data name="&gt;&gt;pnlCompleting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlCompleting.Parent" xml:space="preserve">
+    <value>finishPage</value>
+  </data>
+  <data name="&gt;&gt;pnlCompleting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlCancelling.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pnlCancelling.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 39</value>
+  </data>
+  <data name="pnlCancelling.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 150</value>
+  </data>
+  <data name="pnlCancelling.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlCancelling.Name" xml:space="preserve">
+    <value>pnlCancelling</value>
+  </data>
+  <data name="&gt;&gt;pnlCancelling.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlCancelling.Parent" xml:space="preserve">
+    <value>finishPage</value>
+  </data>
+  <data name="&gt;&gt;pnlCancelling.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="finishPage.FinishText" xml:space="preserve">
+    <value>You have almost completed adding a new subscription. Click the "Finish" button to add your new subscription.</value>
+  </data>
+  <data name="finishPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 80</value>
+  </data>
+  <data name="finishPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 286</value>
+  </data>
+  <data name="finishPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1005</value>
+  </data>
+  <data name="finishPage.Text" xml:space="preserve">
+    <value>Complete!</value>
+  </data>
+  <data name="&gt;&gt;finishPage.Name" xml:space="preserve">
+    <value>finishPage</value>
+  </data>
+  <data name="&gt;&gt;finishPage.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.FinishPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;finishPage.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;finishPage.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="pageFeedItemDisplay.ProceedText" xml:space="preserve">
+    <value>Please click "Next" to continue to the next step or "Finish" to add your new subscription</value>
+  </data>
+  <data name="pageFeedItemDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageFeedItemDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>1012</value>
+  </data>
+  <data name="pageFeedItemDisplay.Text" xml:space="preserve">
+    <value>Feed/Item Display</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemDisplay.Name" xml:space="preserve">
+    <value>pageFeedItemDisplay</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemDisplay.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemDisplay.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemDisplay.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="pageFeedItemControl.ProceedText" xml:space="preserve">
+    <value>Please click "Next" to continue to the next step or "Finish" to add your new subscription</value>
+  </data>
+  <data name="pageFeedItemControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageFeedItemControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1011</value>
+  </data>
+  <data name="pageFeedItemControl.Text" xml:space="preserve">
+    <value>Feed/Item Control</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemControl.Name" xml:space="preserve">
+    <value>pageFeedItemControl</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemControl.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemControl.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageFeedItemControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pageFeedCredentials.ProceedText" xml:space="preserve">
+    <value>Please click "Next" to enter or change Feed/Item control settings...</value>
+  </data>
+  <data name="pageFeedCredentials.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageFeedCredentials.TabIndex" type="System.Int32, mscorlib">
+    <value>1015</value>
+  </data>
+  <data name="pageFeedCredentials.Text" xml:space="preserve">
+    <value>Subscription Credentials</value>
+  </data>
+  <data name="&gt;&gt;pageFeedCredentials.Name" xml:space="preserve">
+    <value>pageFeedCredentials</value>
+  </data>
+  <data name="&gt;&gt;pageFeedCredentials.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageFeedCredentials.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageFeedCredentials.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="pageTitleCategory.ProceedText" xml:space="preserve">
+    <value>Please click "Next" to continue to the next step or "Finish" to add your new subscription</value>
+  </data>
+  <data name="pageTitleCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageTitleCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>1010</value>
+  </data>
+  <data name="pageTitleCategory.Text" xml:space="preserve">
+    <value>Title and Category</value>
+  </data>
+  <data name="&gt;&gt;pageTitleCategory.Name" xml:space="preserve">
+    <value>pageTitleCategory</value>
+  </data>
+  <data name="&gt;&gt;pageTitleCategory.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageTitleCategory.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageTitleCategory.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pictureHelpSyndic8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALDAAA
+        CwwBP0AiyAAAAjFJREFUOE+lU01rE1EU7U/IT5ifUBRcuMrS5aANZBnBRRcqwYUEQRwKQmhQI1I0WDpj
+        VWwk1dnUjtHaEW21FOnQWo1tmCQlatpM06dTpR+a473zWtNoN+KDw9x73z3nfsxMB4D/wr7BiTkft/Mr
+        SN4poWdgAX25IkZefqSrv3PbnFl3A9nxBvT8Msr1LXxZ34bwt8jexKVsAUndQf7VEqXuI8Dk+/YavG9N
+        2A6gDQFqUoJt2xFw15q40DeJkedFovwhwJVXvzdh2EA4ARgWIDY4DygLIH6DYwIlEjmTesrhlsDE23U8
+        mmkElZnMyXzM10AsLZ8sFk4IsgV06x0y2WlOkQJ3n9TxSfwIWg3HZdtpE+gkW+kWiKepBTqqJhBLOlhw
+        fRw/N8whKZC6txQsTNUkqbNbQiHEiMzV7YKAotpQojZqno9DkWstgYu3XNr2dtC+JFJyTFAnsrJpk0/E
+        kGrS00St/hUH1Ct8JQUyD0qoeJs0uyQq0XKA9JAUCKkOQQqoCRuFYhVdpwy+kgKjk59hOV6wICaGokxw
+        aKQy7YV8Jh8xAxhWGcPWPHpvjrUEGKnBOSx6P6nqDoHANp9dsmY4+LDi4dhJHdOzFb5qCYxNVdGTmYLb
+        oG+BqqiaE8zNYJtji9VVRKj1gRy91x3ebwHG6IsSzl4eh/H4PWbmK1imbdfqfjAzt91FlfU9ZEabwC76
+        c29w4vxDHI5ex8GjVxE5PYhU/zNqu/0/YLQ5/w50/AJjKwa3C0FtvAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="pictureHelpSyndic8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureHelpSyndic8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 244</value>
+  </data>
+  <data name="pictureHelpSyndic8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 22</value>
+  </data>
+  <data name="pictureHelpSyndic8.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpSyndic8.Name" xml:space="preserve">
+    <value>pictureHelpSyndic8</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpSyndic8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpSyndic8.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;pictureHelpSyndic8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSyndic8Help.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblSyndic8Help.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSyndic8Help.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 12</value>
+  </data>
+  <data name="lblSyndic8Help.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 240</value>
+  </data>
+  <data name="lblSyndic8Help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 31</value>
+  </data>
+  <data name="lblSyndic8Help.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblSyndic8Help.Text" xml:space="preserve">
+    <value>Syndic8</value>
+  </data>
+  <data name="lblSyndic8Help.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblSyndic8Help.Name" xml:space="preserve">
+    <value>lblSyndic8Help</value>
+  </data>
+  <data name="&gt;&gt;lblSyndic8Help.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSyndic8Help.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;lblSyndic8Help.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnManageSearchEngines.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnManageSearchEngines.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="btnManageSearchEngines.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnManageSearchEngines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 170</value>
+  </data>
+  <data name="btnManageSearchEngines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 28</value>
+  </data>
+  <data name="btnManageSearchEngines.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnManageSearchEngines.Text" xml:space="preserve">
+    <value>Manage...</value>
+  </data>
+  <data name="&gt;&gt;btnManageSearchEngines.Name" xml:space="preserve">
+    <value>btnManageSearchEngines</value>
+  </data>
+  <data name="&gt;&gt;btnManageSearchEngines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnManageSearchEngines.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;btnManageSearchEngines.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblNewBySearchEngines.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNewBySearchEngines.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNewBySearchEngines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 149</value>
+  </data>
+  <data name="lblNewBySearchEngines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 20</value>
+  </data>
+  <data name="lblNewBySearchEngines.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblNewBySearchEngines.Text" xml:space="preserve">
+    <value>Search engine:</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchEngines.Name" xml:space="preserve">
+    <value>lblNewBySearchEngines</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchEngines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchEngines.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchEngines.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cboNewBySearchEngines.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cboNewBySearchEngines.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cboNewBySearchEngines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 171</value>
+  </data>
+  <data name="cboNewBySearchEngines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 25</value>
+  </data>
+  <data name="cboNewBySearchEngines.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cboNewBySearchEngines.Name" xml:space="preserve">
+    <value>cboNewBySearchEngines</value>
+  </data>
+  <data name="&gt;&gt;cboNewBySearchEngines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboNewBySearchEngines.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;cboNewBySearchEngines.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblNewBySearchIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNewBySearchIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNewBySearchIntro.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="lblNewBySearchIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="lblNewBySearchIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 83</value>
+  </data>
+  <data name="lblNewBySearchIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblNewBySearchIntro.Text" xml:space="preserve">
+    <value>The result depends on the used search engine. Some of them are online Feed search services that are able to find related web feeds you can directly subscribe to (Syndic8). Other may simply provide the search result as a web feed.</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchIntro.Name" xml:space="preserve">
+    <value>lblNewBySearchIntro</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchIntro.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchIntro.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtNewBySearchWords.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtNewBySearchWords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 109</value>
+  </data>
+  <data name="txtNewBySearchWords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 24</value>
+  </data>
+  <data name="txtNewBySearchWords.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtNewBySearchWords.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtNewBySearchWords.Name" xml:space="preserve">
+    <value>txtNewBySearchWords</value>
+  </data>
+  <data name="&gt;&gt;txtNewBySearchWords.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNewBySearchWords.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;txtNewBySearchWords.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblNewBySearchWords.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNewBySearchWords.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNewBySearchWords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 87</value>
+  </data>
+  <data name="lblNewBySearchWords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 20</value>
+  </data>
+  <data name="lblNewBySearchWords.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNewBySearchWords.Text" xml:space="preserve">
+    <value>Key word(s) or topic:</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchWords.Name" xml:space="preserve">
+    <value>lblNewBySearchWords</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchWords.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchWords.Parent" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;lblNewBySearchWords.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pageNewBySearchTopic.Description" xml:space="preserve">
+    <value>Specify the key word(s) or topic to find related web feeds or search results.</value>
+  </data>
+  <data name="pageNewBySearchTopic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="pageNewBySearchTopic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageNewBySearchTopic.TabIndex" type="System.Int32, mscorlib">
+    <value>1014</value>
+  </data>
+  <data name="pageNewBySearchTopic.Text" xml:space="preserve">
+    <value>New subscription by Search</value>
+  </data>
+  <data name="&gt;&gt;pageNewBySearchTopic.Name" xml:space="preserve">
+    <value>pageNewBySearchTopic</value>
+  </data>
+  <data name="&gt;&gt;pageNewBySearchTopic.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageNewBySearchTopic.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageNewBySearchTopic.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pageFoundMultipleFeeds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageFoundMultipleFeeds.TabIndex" type="System.Int32, mscorlib">
+    <value>1007</value>
+  </data>
+  <data name="pageFoundMultipleFeeds.Text" xml:space="preserve">
+    <value>Multiple feeds found</value>
+  </data>
+  <data name="&gt;&gt;pageFoundMultipleFeeds.Name" xml:space="preserve">
+    <value>pageFoundMultipleFeeds</value>
+  </data>
+  <data name="&gt;&gt;pageFoundMultipleFeeds.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageFoundMultipleFeeds.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageFoundMultipleFeeds.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="pageValidateUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageValidateUrl.TabIndex" type="System.Int32, mscorlib">
+    <value>1004</value>
+  </data>
+  <data name="pageValidateUrl.Text" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="&gt;&gt;pageValidateUrl.Name" xml:space="preserve">
+    <value>pageValidateUrl</value>
+  </data>
+  <data name="&gt;&gt;pageValidateUrl.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageValidateUrl.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageValidateUrl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pageNewByURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageNewByURL.TabIndex" type="System.Int32, mscorlib">
+    <value>1009</value>
+  </data>
+  <data name="pageNewByURL.Text" xml:space="preserve">
+    <value>New subscription by URL</value>
+  </data>
+  <data name="&gt;&gt;pageNewByURL.Name" xml:space="preserve">
+    <value>pageNewByURL</value>
+  </data>
+  <data name="&gt;&gt;pageNewByURL.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageNewByURL.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageNewByURL.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pageHowToSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageHowToSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>1013</value>
+  </data>
+  <data name="pageHowToSelection.Text" xml:space="preserve">
+    <value>New Subscription</value>
+  </data>
+  <data name="&gt;&gt;pageHowToSelection.Name" xml:space="preserve">
+    <value>pageHowToSelection</value>
+  </data>
+  <data name="&gt;&gt;pageHowToSelection.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageHowToSelection.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageHowToSelection.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="pageWelcome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>428, 286</value>
+  </data>
+  <data name="pageWelcome.TabIndex" type="System.Int32, mscorlib">
+    <value>1003</value>
+  </data>
+  <data name="pageWelcome.Text" xml:space="preserve">
+    <value>Welcome to the Add Subscription Wizard!</value>
+  </data>
+  <data name="&gt;&gt;pageWelcome.Name" xml:space="preserve">
+    <value>pageWelcome</value>
+  </data>
+  <data name="&gt;&gt;pageWelcome.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.IntroductionPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageWelcome.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageWelcome.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lstNNTPGroups.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lstNNTPGroups.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lstNNTPGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 157</value>
+  </data>
+  <data name="lstNNTPGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 89</value>
+  </data>
+  <data name="lstNNTPGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;lstNNTPGroups.Name" xml:space="preserve">
+    <value>lstNNTPGroups</value>
+  </data>
+  <data name="&gt;&gt;lstNNTPGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstNNTPGroups.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;lstNNTPGroups.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblUsenetHelp.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lblUsenetHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUsenetHelp.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 12</value>
+  </data>
+  <data name="lblUsenetHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 240</value>
+  </data>
+  <data name="lblUsenetHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 31</value>
+  </data>
+  <data name="lblUsenetHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblUsenetHelp.Text" xml:space="preserve">
+    <value>Usenet</value>
+  </data>
+  <data name="lblUsenetHelp.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblUsenetHelp.Name" xml:space="preserve">
+    <value>lblUsenetHelp</value>
+  </data>
+  <data name="&gt;&gt;lblUsenetHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUsenetHelp.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;lblUsenetHelp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALDAAA
+        CwwBP0AiyAAAAjFJREFUOE+lU01rE1EU7U/IT5ifUBRcuMrS5aANZBnBRRcqwYUEQRwKQmhQI1I0WDpj
+        VWwk1dnUjtHaEW21FOnQWo1tmCQlatpM06dTpR+a473zWtNoN+KDw9x73z3nfsxMB4D/wr7BiTkft/Mr
+        SN4poWdgAX25IkZefqSrv3PbnFl3A9nxBvT8Msr1LXxZ34bwt8jexKVsAUndQf7VEqXuI8Dk+/YavG9N
+        2A6gDQFqUoJt2xFw15q40DeJkedFovwhwJVXvzdh2EA4ARgWIDY4DygLIH6DYwIlEjmTesrhlsDE23U8
+        mmkElZnMyXzM10AsLZ8sFk4IsgV06x0y2WlOkQJ3n9TxSfwIWg3HZdtpE+gkW+kWiKepBTqqJhBLOlhw
+        fRw/N8whKZC6txQsTNUkqbNbQiHEiMzV7YKAotpQojZqno9DkWstgYu3XNr2dtC+JFJyTFAnsrJpk0/E
+        kGrS00St/hUH1Ct8JQUyD0qoeJs0uyQq0XKA9JAUCKkOQQqoCRuFYhVdpwy+kgKjk59hOV6wICaGokxw
+        aKQy7YV8Jh8xAxhWGcPWPHpvjrUEGKnBOSx6P6nqDoHANp9dsmY4+LDi4dhJHdOzFb5qCYxNVdGTmYLb
+        oG+BqqiaE8zNYJtji9VVRKj1gRy91x3ebwHG6IsSzl4eh/H4PWbmK1imbdfqfjAzt91FlfU9ZEabwC76
+        c29w4vxDHI5ex8GjVxE5PYhU/zNqu/0/YLQ5/w50/AJjKwa3C0FtvAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 244</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 22</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 21</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 135</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 22</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.Text" xml:space="preserve">
+    <value>Reload list of groups</value>
+  </data>
+  <data name="lblReloadNntpListOfGroups.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblReloadNntpListOfGroups.Name" xml:space="preserve">
+    <value>lblReloadNntpListOfGroups</value>
+  </data>
+  <data name="&gt;&gt;lblReloadNntpListOfGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblReloadNntpListOfGroups.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;lblReloadNntpListOfGroups.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblNNTPGroups.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNNTPGroups.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNNTPGroups.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 135</value>
+  </data>
+  <data name="lblNNTPGroups.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 22</value>
+  </data>
+  <data name="lblNNTPGroups.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblNNTPGroups.Text" xml:space="preserve">
+    <value>Groups:</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPGroups.Name" xml:space="preserve">
+    <value>lblNNTPGroups</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPGroups.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPGroups.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnManageNNTPServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnManageNNTPServer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="btnManageNNTPServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnManageNNTPServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 101</value>
+  </data>
+  <data name="btnManageNNTPServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 28</value>
+  </data>
+  <data name="btnManageNNTPServer.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnManageNNTPServer.Text" xml:space="preserve">
+    <value>Manage...</value>
+  </data>
+  <data name="&gt;&gt;btnManageNNTPServer.Name" xml:space="preserve">
+    <value>btnManageNNTPServer</value>
+  </data>
+  <data name="&gt;&gt;btnManageNNTPServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnManageNNTPServer.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;btnManageNNTPServer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblNNTPServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNNTPServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNNTPServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 80</value>
+  </data>
+  <data name="lblNNTPServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>438, 20</value>
+  </data>
+  <data name="lblNNTPServer.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblNNTPServer.Text" xml:space="preserve">
+    <value>NNTP Server:</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPServer.Name" xml:space="preserve">
+    <value>lblNNTPServer</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPServer.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;lblNNTPServer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cboNNTPServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cboNNTPServer.ItemHeight" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cboNNTPServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 102</value>
+  </data>
+  <data name="cboNNTPServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 25</value>
+  </data>
+  <data name="cboNNTPServer.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;cboNNTPServer.Name" xml:space="preserve">
+    <value>cboNNTPServer</value>
+  </data>
+  <data name="&gt;&gt;cboNNTPServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboNNTPServer.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;cboNNTPServer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>0, 0</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 4</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 73</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblNewByNNTPGroupIntro.Text" xml:space="preserve">
+    <value>To be able to subscribe to a Usenet news group, you must have defined at least one NNTP server. You can click "Manage..." to create a new one or change the settings.</value>
+  </data>
+  <data name="&gt;&gt;lblNewByNNTPGroupIntro.Name" xml:space="preserve">
+    <value>lblNewByNNTPGroupIntro</value>
+  </data>
+  <data name="&gt;&gt;lblNewByNNTPGroupIntro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewByNNTPGroupIntro.Parent" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;lblNewByNNTPGroupIntro.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pageNewByNNTPGroup.Description" xml:space="preserve">
+    <value>Select a NNTP server and one of the provided groups you want to subscribe.</value>
+  </data>
+  <data name="pageNewByNNTPGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 84</value>
+  </data>
+  <data name="pageNewByNNTPGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 282</value>
+  </data>
+  <data name="pageNewByNNTPGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>1016</value>
+  </data>
+  <data name="pageNewByNNTPGroup.Text" xml:space="preserve">
+    <value>New subscription of a Usenet news group</value>
+  </data>
+  <data name="&gt;&gt;pageNewByNNTPGroup.Name" xml:space="preserve">
+    <value>pageNewByNNTPGroup</value>
+  </data>
+  <data name="&gt;&gt;pageNewByNNTPGroup.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.WizardPage, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;pageNewByNNTPGroup.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;pageNewByNNTPGroup.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 435</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="wizard.Text" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>Divelements.WizardFramework.Wizard, WizardFramework, Version=1.0.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="timerIncreaseProgress.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="timerStartValidation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 17</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>330, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>622, 435</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>640, 480</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add Subscription Wizard</value>
+  </data>
+  <data name="&gt;&gt;timerIncreaseProgress.Name" xml:space="preserve">
+    <value>timerIncreaseProgress</value>
+  </data>
+  <data name="&gt;&gt;timerIncreaseProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerStartValidation.Name" xml:space="preserve">
+    <value>timerStartValidation</value>
+  </data>
+  <data name="&gt;&gt;timerStartValidation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddSubscriptionWizard</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
